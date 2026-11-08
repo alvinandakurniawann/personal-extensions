@@ -199,7 +199,7 @@ function firkaizenSubs(tmdbId, mediaType, seasonNum, episodeNum) {
         if (mediaType === "tv") u += "&season=" + (seasonNum || 1) + "&episode=" + (episodeNum || 1);
         function attempt() {
             var ctrl = new AbortController();
-            var timer = setTimeout(function () { ctrl.abort(); }, 10000);
+            var timer = setTimeout(function () { ctrl.abort(); }, 6000);
             return fetch(u, { signal: ctrl.signal }).then(function (r) {
                 clearTimeout(timer);
                 if (!r.ok) return null;

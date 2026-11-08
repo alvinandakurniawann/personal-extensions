@@ -1,6 +1,6 @@
 {
   "name": "Personal Extensions",
-  "version": "1.7.1",
+  "version": "1.8.0",
   "scrapers": [
     {
       "id": "idsub",
@@ -120,6 +120,26 @@
         "m3u8"
       ],
       "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "id": "kisskh",
+      "name": "KissKH",
+      "description": "Drama & film Asia dari KissKH (API kisskh.ovh) — CDN Cloudflare, sub lunak id+en via FirKaizen.",
+      "version": "1.0.0",
+      "author": "alvin",
+      "filename": "providers/kisskh.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "contentLanguage": [
+        "id"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://kisskh.ovh/favicon.ico"
     }
   ]
 }
