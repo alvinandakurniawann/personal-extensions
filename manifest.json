@@ -1,6 +1,6 @@
 {
   "name": "Personal Extensions",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "scrapers": [
     {
       "id": "idsub",
@@ -81,6 +81,19 @@
       "contentLanguage": [
         "id"
       ]
+    },
+    {
+      "id": "rebahin",
+      "name": "Rebahin",
+      "description": "Film & series sub Indo dari Rebahin (jaringan CSN) — API token situs sendiri, playlist HLS langsung (majorplay).",
+      "version": "1.0.0",
+      "author": "alvin",
+      "file": "providers/rebahin.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true
     }
   ]
 }
