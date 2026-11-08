@@ -333,8 +333,55 @@ function getStreams(tmdbId, mediaType, seasonNum, episodeNum) {
             });
             return chain.then(function (found) { return found || []; });
         })
+        .then(function (streams) { return attachFirkaizen(streams, tmdbId, mediaType, seasonNum, episodeNum); })
         .catch(function (err) { console.error("[IDLIX] Error:", err && err.message); return []; });
 }
 
-if (typeof module !== "undefined" && module.exports) { module.exports = { getStreams: getStreams }; }
+if (typeof module !== "undefined" && 
+module.exports) { module.exports = { getStreams: getStreams }; }
 else { global.IdlixScraperModule = { getStreams: getStreams }; }
+
+// ---- Subtitle lunak id+en dari API terbuka FirKaizen (berbasis TMDB id) ----
+// Dipasang ke stream hasil provider ini; bahasa yang sudah ada tidak diduplikasi.
+function firkaizenSubs(tmdbId, mediaType, seasonNum, episodeNum) {
+    var langs = ["id", "en"];
+    var jobs = langs.map(function (lang) {
+        var u = "https://play.firkaizen.id/api/subtitles/file?tmdb_id=" + tmdbId +
+            "&media_type=" + (mediaType === "tv" ? "tv" : "movie") + "&language=" + lang;
+        if (mediaType === "tv") u += "&season=" + (seasonNum || 1) + "&episode=" + (episodeNum || 1);
+        function attempt() {
+            var ctrl = new AbortController();
+            var timer = setTimeout(function () { ctrl.abort(); }, 10000);
+            return fetch(u, { signal: ctrl.signal }).then(function (r) {
+                clearTimeout(timer);
+                if (!r.ok) return null;
+                if (r.body && r.body.cancel) { try { r.body.cancel(); } catch (e) {} }
+                return { id: "firkaizen-" + lang, url: u, lang: lang };
+            }).catch(function () { clearTimeout(timer); return null; });
+        }
+        return attempt().then(function (hit) {
+            if (hit) return hit;
+            return new Promise(function (res) { setTimeout(res, 400); }).then(attempt);
+        });
+    });
+    return Promise.all(jobs).then(function (arr) {
+        return arr.filter(function (x) { return !!x; });
+    });
+}
+
+function attachFirkaizen(streams, tmdbId, mediaType, seasonNum, episodeNum) {
+    if (!streams || !streams.length) return Promise.resolve(streams);
+    return firkaizenSubs(tmdbId, mediaType, seasonNum, episodeNum).then(function (subs) {
+        if (subs.length) {
+            streams.forEach(function (s) {
+                var existing = s.subtitles || [];
+                var have = {};
+                existing.forEach(function (x) { have[x.lang] = true; });
+                var add = subs.filter(function (x) { return !have[x.lang]; });
+                if (add.length) s.subtitles = existing.concat(add);
+            });
+        }
+        return streams;
+    }).catch(function () { return streams; });
+}
+

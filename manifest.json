@@ -1,6 +1,6 @@
 {
   "name": "Personal Extensions",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "scrapers": [
     {
       "id": "idsub",
