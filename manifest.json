@@ -1,6 +1,6 @@
 {
   "name": "Personal Extensions",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "scrapers": [
     {
       "id": "idsub",
@@ -92,6 +92,18 @@
       "supportedTypes": [
         "movie",
         "tv"
+      ],
+      "enabled": true
+    },
+    {
+      "id": "lk21",
+      "name": "LK21",
+      "description": "Film sub Indo dari LK21 (API lk21.mobile) — pencocokan terverifikasi IMDb ID, server P2P via videonode/playcdn. Khusus film.",
+      "version": "1.0.0",
+      "author": "alvin",
+      "file": "providers/lk21.js",
+      "supportedTypes": [
+        "movie"
       ],
       "enabled": true
     }
