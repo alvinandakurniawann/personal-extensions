@@ -1,6 +1,6 @@
 {
   "name": "Personal Extensions",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "scrapers": [
     {
       "id": "idsub",
@@ -53,6 +53,26 @@
         "tv"
       ],
       "filename": "providers/idlix.js",
+      "enabled": true,
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://via.placeholder.com/150",
+      "contentLanguage": [
+        "id"
+      ]
+    },
+    {
+      "id": "nunadrama",
+      "name": "Nunadrama",
+      "description": "Drama Asia subtitle Indonesia",
+      "version": "1.0.0",
+      "author": "personal",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/nunadrama.js",
       "enabled": true,
       "formats": [
         "m3u8"
