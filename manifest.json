@@ -1,6 +1,6 @@
 {
   "name": "Personal Extensions",
-  "version": "1.10.0",
+  "version": "1.11.0",
   "scrapers": [
     {
       "id": "idsub",
@@ -168,6 +168,26 @@
       "version": "1.0.0",
       "author": "alvin",
       "filename": "providers/castle.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "contentLanguage": [
+        "id"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "id": "cineby",
+      "name": "Cineby",
+      "description": "Film & series dari backend Wings (api.wecollege.net) — payload terenkripsi didekripsi lokal, pencocokan TMDB id persis, sampai 2160p, sub en bawaan + id/en via FirKaizen.",
+      "version": "1.0.0",
+      "author": "alvin",
+      "filename": "providers/cineby.js",
       "supportedTypes": [
         "movie",
         "tv"
