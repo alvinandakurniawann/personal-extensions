@@ -250,3 +250,7 @@ oppadrama (DramaAsia, done), IDLIX (algorithm documented in IDLIX_ALGO.md).
 - **Subtitle reality:** only Loklok/LokTV offer soft .vtt-style Indonesian
   subs; everything else is hardsub (fine for playback, no subtitle track
   to hand to Nuvio).
+
+## Nodrakor & Ngedrakor (recon 2026-11-08 sore, atas usul alvin)
+- **Nodrakor — brand MATI, tidak ada target scrape.** Domain kanonis: nodrakor.com "for sale" (Spaceship), nodrakor.id parkir/dijual, nodrakor.cc dibajak situs judi, nodrakor.net mati. 10 varian lain diprobe (my.id/website/link/org/top/xyz/site/club/online/pro) — semua mati/parkir. Artikel berita pun memperlakukannya sebagai situs lama yang dicari penggantinya (seangkatan DramaQu). Kesimpulan: tidak ada situs aktif untuk di-scrape.
+- **Ngedrakor — app-only, webnya cuma landing.** ngedrakor.net = halaman promosi statis (klaim app Android/Android TV/Windows, "v2.0 gratis tanpa iklan", 1jt+ pengguna) tanpa player/link konten sama sekali. Produk aslinya aplikasi Play Store "ngeDrakor" (Kimchi Labs, com.kimchilabs.ngedrakorv2, support friend@ngedrakor.net). Kelas kesulitan sama dengan Loklok: perlu analisis APK/traffic app, bukan scraping web. Parkir.
