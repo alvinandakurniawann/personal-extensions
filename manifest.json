@@ -1,6 +1,6 @@
 {
   "name": "Personal Extensions",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "scrapers": [
     {
       "id": "idsub",
@@ -33,6 +33,26 @@
         "tv"
       ],
       "filename": "providers/dramaasia.js",
+      "enabled": true,
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://via.placeholder.com/150",
+      "contentLanguage": [
+        "id"
+      ]
+    },
+    {
+      "id": "idlix",
+      "name": "IDLIX",
+      "description": "Film & series subtitle Indonesia (OTT Indo)",
+      "version": "1.0.0",
+      "author": "personal",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "filename": "providers/idlix.js",
       "enabled": true,
       "formats": [
         "m3u8"
