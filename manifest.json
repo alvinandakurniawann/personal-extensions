@@ -1,6 +1,6 @@
 {
   "name": "Personal Extensions",
-  "version": "1.7.0",
+  "version": "1.7.1",
   "scrapers": [
     {
       "id": "idsub",
@@ -88,12 +88,19 @@
       "description": "Film & series sub Indo dari Rebahin (jaringan CSN) — API token situs sendiri, playlist HLS langsung (majorplay).",
       "version": "1.0.0",
       "author": "alvin",
-      "file": "providers/rebahin.js",
       "supportedTypes": [
         "movie",
         "tv"
       ],
-      "enabled": true
+      "enabled": true,
+      "filename": "providers/rebahin.js",
+      "contentLanguage": [
+        "id"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://via.placeholder.com/150"
     },
     {
       "id": "lk21",
@@ -101,11 +108,18 @@
       "description": "Film sub Indo dari LK21 (API lk21.mobile) — pencocokan terverifikasi IMDb ID, server P2P via videonode/playcdn. Khusus film.",
       "version": "1.0.0",
       "author": "alvin",
-      "file": "providers/lk21.js",
       "supportedTypes": [
         "movie"
       ],
-      "enabled": true
+      "enabled": true,
+      "filename": "providers/lk21.js",
+      "contentLanguage": [
+        "id"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://via.placeholder.com/150"
     }
   ]
 }
