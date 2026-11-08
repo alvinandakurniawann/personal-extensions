@@ -263,3 +263,11 @@ Penambangan via social search (akun tips Indo: @educazy.id, @alversetech, dll). 
 - **VidBox (vidboxto.com -> vidbox.wtf)** — HIDUP tapi "streaming guide"/agregator (gambar TMDB, Cloudflare) — kemungkinan cuma front embed pihak ketiga; prioritas rendah.
 - **Mati/tidak terjangkau dari VM:** dulo.tv (000, padahal viral di FB), sineasmov.com (000).
 - **Komentar spam (kepercayaan rendah, belum diprobe):** zumpra.cc, kiremo.st, glomvi.cc, frilko.st. Sekali sebut: cinevo.site (user lapor gagal load), dsflix.com (Today'sFlix), nightflix.to, novashow.live, flystream.net, redflix.biz (agregator link), framextv.xyz, ezmov.top, popcornmovie.org, bingebrowse.net, cinejoy.to, netplayz.icu, HydraHD (user lapor error HLS), anikai.to & flickbuff.cc (anime, sering down).
+- **Dari kolom komentar/reply sosmed (putaran kedua, 8 Nov malam):**
+  - **GGReels (v1.ggreels.site, cadangan ggreels.my.id / ggreels.web.id)** — HIDUP, SSR ~295KB: drama pendek + K-drama + anime + film, sub Indo. Ditemukan dari postingan Facebook (tab: Anichin, Anime, BonusTV, CashDrama). Tetangga dekat Godrama — kandidat serius.
+  - **Jomflix (jomflix.web.id -> tv1.jomflix.web.id)** — HIDUP, ~110KB: film & series umum sub Indo. Dari komentar postingan VOD (user sempat lapor link rusak, author memberi URL tv1). Kandidat umum.
+  - **ZiPlay (ziplay.my.id)** — HIDUP, ~133KB: ANIME sub Indo; server embed filedon/vidhide/mega/odstream + unduhan 360p-1080p. Niche anime saja.
+  - **Streamax (streamax.net)** — MATI: domain dijual (HugeDomains); reel FB-nya konten lama.
+  - **Ngefilm (ngefilm.live -> ngefilm.store)** — cuma halaman info 1,7KB (hub ganti domain); komentar user mengeluh isinya cuma cuplikan 2 menit. Kepercayaan rendah.
+  - **NFIS (nontonfilmindosub.web.id)** — rusak (Cloudflare "DNS points to prohibited IP").
+  - Bukan streaming: welib.org (e-book). movie-box.co = halaman akun MovieBox (sudah kandidat Tier 2 audit). streamimdb.ru = trik "play+imdb" Rusia, bukan khusus Indo.
