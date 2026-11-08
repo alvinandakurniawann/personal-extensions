@@ -1,6 +1,6 @@
 {
   "name": "Personal Extensions",
-  "version": "1.9.0",
+  "version": "1.10.0",
   "scrapers": [
     {
       "id": "idsub",
@@ -148,6 +148,26 @@
       "version": "1.0.0",
       "author": "alvin",
       "filename": "providers/vidapi.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "contentLanguage": [
+        "id"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://via.placeholder.com/150"
+    },
+    {
+      "id": "castle",
+      "name": "Castle",
+      "description": "Film & series dari backend aplikasi Castle (api.hlowb.com) — API terenkripsi AES didekripsi lokal, pencocokan judul+tahun terverifikasi TMDB, sub en bawaan + id/en via FirKaizen.",
+      "version": "1.0.0",
+      "author": "alvin",
+      "filename": "providers/castle.js",
       "supportedTypes": [
         "movie",
         "tv"
