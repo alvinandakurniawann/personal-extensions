@@ -1,12 +1,12 @@
 {
   "name": "Personal Extensions",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "scrapers": [
     {
       "id": "idsub",
       "name": "IDSub",
       "description": "Film & series subtitle Indonesia",
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": "personal",
       "supportedTypes": ["movie", "tv"],
       "filename": "providers/idsub.js",
