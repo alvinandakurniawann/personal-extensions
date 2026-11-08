@@ -271,3 +271,4 @@ Penambangan via social search (akun tips Indo: @educazy.id, @alversetech, dll). 
   - **Ngefilm (ngefilm.live -> ngefilm.store)** — cuma halaman info 1,7KB (hub ganti domain); komentar user mengeluh isinya cuma cuplikan 2 menit. Kepercayaan rendah.
   - **NFIS (nontonfilmindosub.web.id)** — rusak (Cloudflare "DNS points to prohibited IP").
   - Bukan streaming: welib.org (e-book). movie-box.co = halaman akun MovieBox (sudah kandidat Tier 2 audit). streamimdb.ru = trik "play+imdb" Rusia, bukan khusus Indo.
+- **Jomflix — PUTUSAN AKHIR: DITOLAK (tes HP alvin, 8 Nov malam).** Alvin mencoba langsung dari HP: situsnya beriklan dan memblokir adblocker; Doctor X ep 1 (series baru, mestinya bisa diputar) hanya menampilkan iklan 15 detik lalu BLANK — langkah stream-nya rusak juga dari koneksi rumahan, bukan cuma blokir IP datacenter seperti dugaan recon. Gagal kriteria kualitas/kenyamanan. Tidak dibangun.
