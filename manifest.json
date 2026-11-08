@@ -1,6 +1,6 @@
 {
   "name": "Personal Extensions",
-  "version": "1.8.0",
+  "version": "1.9.0",
   "scrapers": [
     {
       "id": "idsub",
@@ -140,6 +140,26 @@
         "m3u8"
       ],
       "logo": "https://kisskh.ovh/favicon.ico"
+    },
+    {
+      "id": "vidapi",
+      "name": "VidAPI",
+      "description": "Film & series dari VidAPI (streamdata.vaplayer.ru) — 1 panggilan API per judul, pencocokan TMDB id, sub id+en bawaan API + FirKaizen.",
+      "version": "1.0.0",
+      "author": "alvin",
+      "filename": "providers/vidapi.js",
+      "supportedTypes": [
+        "movie",
+        "tv"
+      ],
+      "enabled": true,
+      "contentLanguage": [
+        "id"
+      ],
+      "formats": [
+        "m3u8"
+      ],
+      "logo": "https://via.placeholder.com/150"
     }
   ]
 }
